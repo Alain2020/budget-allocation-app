@@ -1,38 +1,219 @@
-.App {
+/* src/App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.budget-container {
+  background-color: #3498db;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #fff;
+}
+
+.budget-details {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.allocation-container {
+  background-color: #ecf0f1;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.allocation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.allocation-table th, .allocation-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #bdc3c7;
+}
+
+.allocation-table th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.change-allocation-container {
+  background-color: #2ecc71;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #fff;
+}
+
+.change-allocation-form {
+  margin-top: 20px;
+}
+
+.change-allocation-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.change-allocation-form input, .change-allocation-form button {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.change-allocation-form button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.change-allocation-form button:hover {
+  background-color: #c0392b;
+}
+
+/* src/App.css */
+/* ... (previous styles) */
+
+.budget-details-table {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 15px;
+}
+
+.budget-box {
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.budget-budget {
+  background-color: #3498db;
+}
+
+.budget-remaining {
+  background-color: #2ecc71;
+}
+
+.budget-spent {
+  background-color: #e74c3c;
+}
+
+.budget-currency {
+  background-color: #f39c12;
+}
+
+.budget-box span {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+/* src/App.css */
+/* ... (previous styles) */
+
+.allocation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.allocation-table th, .allocation-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.allocation-table th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.allocation-table td {
+  background-color: #ecf0f1;
+}
+
+/* ... (other styles) */
+/* src/App.css */
+/* ... (previous styles) */
+
+.budget-details-table {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.budget-box {
+  padding: 15px;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.budget-budget {
+  background-color: #ecf0f1;
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.budget-remaining {
+  background-color: #3498db;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.budget-spent {
+  background-color: #2ecc71;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.budget-currency {
+  background-color: #27ae60;
+  color: #fff;
 }
+
+.budget-box span {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.budget-box select {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+

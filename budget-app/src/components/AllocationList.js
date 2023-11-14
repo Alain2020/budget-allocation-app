@@ -2,11 +2,18 @@
 import React from 'react';
 
 const AllocationList = () => {
+  const departments = [
+    { name: 'Marketing', allocatedBudget: '£50' },
+    { name: 'Finance', allocatedBudget: '£300' },
+    { name: 'Sales', allocatedBudget: '£70' },
+    { name: 'Human Resource', allocatedBudget: '£40' },
+    { name: 'IT', allocatedBudget: '£500' },
+  ];
+
   return (
     <div>
       <h2>Allocation</h2>
-      {/* Add allocation list here */}
-      <table>
+      <table className="allocation-table">
         <thead>
           <tr>
             <th>Department</th>
@@ -16,7 +23,14 @@ const AllocationList = () => {
           </tr>
         </thead>
         <tbody>
-          {/* Map through departments and display allocations */}
+          {departments.map((department, index) => (
+            <tr key={index}>
+              <td>{department.name}</td>
+              <td>{department.allocatedBudget}</td>
+              <td>+</td>
+              <td>-</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
