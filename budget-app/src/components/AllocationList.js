@@ -1,38 +1,25 @@
-// src/components/AllocationList.js
-import React from 'react';
+import React, { useContext } from 'react';
+import './AllocationList.css';
+import { BudgetContext } from '../context/BudgetContext';
+import AllocationTable from './AllocationTable';
+import ChangeAllocation from './ChangeAllocation';
 
 const AllocationList = () => {
-  const departments = [
-    { name: 'Marketing', allocatedBudget: '£50' },
-    { name: 'Finance', allocatedBudget: '£300' },
-    { name: 'Sales', allocatedBudget: '£70' },
-    { name: 'Human Resource', allocatedBudget: '£40' },
-    { name: 'IT', allocatedBudget: '£500' },
-  ];
+  const { budget, remainingBudget, spentSoFar } = useContext(BudgetContext);
 
   return (
-    <div>
-      <h2>Allocation</h2>
-      <table className="allocation-table">
-        <thead>
-          <tr>
-            <th>Department</th>
-            <th>Allocated Budget</th>
-            <th>Increase by 10</th>
-            <th>Decrease by 1</th>
-          </tr>
-        </thead>
-        <tbody>
-          {departments.map((department, index) => (
-            <tr key={index}>
-              <td>{department.name}</td>
-              <td>{department.allocatedBudget}</td>
-              <td>+</td>
-              <td>-</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="allocation-list-container">
+      <h2>Company's Budget Allocation</h2>
+      <div className="budget-info">
+        <p>Budget: £{budget}</p>
+        <p>Remaining: £{remainingBudget}</p>
+        <p>Spent so far: £{spentSoFar}</p>
+        <p>Currency (£ Pound)▾</p>
+      </div>
+
+      <AllocationTable />
+
+      <ChangeAllocation />
     </div>
   );
 };
