@@ -1,10 +1,77 @@
+/* Add these styles to your existing AllocationList.css */
+
+/* Styles for the new layout */
 .allocation-list-container {
-    text-align: center;
-    margin: 20px;
-  }
-  
-  .budget-info {
-    margin-bottom: 20px;
-  }
-  /* Add more styles as needed */
-  
+  text-align: center;
+  margin: 20px;
+}
+
+.budget-info-container {
+  display: flex;
+  justify-content: space-between; /* Adjusted spacing for better alignment */
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.budget-info-box {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+  height: 70px;
+  border: 1px solid #ccc;
+}
+
+.budget-info-label {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.budget-info-value {
+  font-size: 18px;
+}
+
+/* Background colors for each section */
+.budget {
+  background-color: #E3E4E6;
+}
+
+.remaining {
+  background-color: #D2E8DE;
+}
+
+.spent-so-far {
+  background-color: #D0E3FF;
+}
+
+.currency-dropdown {
+  margin-left: 5px;
+  background-color: #94E59A;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+/* Style for the delete button */
+th:last-child,
+td:last-child {
+  text-align: center;
+}
+
+button.delete {
+  background-color: #575757; /* Dark grey color for the delete button */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 10px; /* Adjusted the left margin */
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Additional styles as needed */

@@ -11,6 +11,7 @@ const AllocationTable = () => {
           <th>Allocated Budget</th>
           <th>Increase by 10</th>
           <th>Decrease by 1</th>
+          <th>Delete</th> {/* Added the delete column header */}
         </tr>
       </thead>
       <tbody>
